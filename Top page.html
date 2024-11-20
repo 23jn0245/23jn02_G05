@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>一目ぼれ注文システム - トップページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            gap: 10px;
+        }
+        nav button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100px;
+            height: 40px;
+        }
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        .left-sidebar {
+            width: 20%;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .left-sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .genre-list {
+            list-style: none;
+            padding: 0;
+        }
+        .genre-list li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .product-section {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            width: 150px;
+            border-radius: 8px;
+        }
+        .product-info {
+            text-align: left;
+        }
+        .product-info h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .product-info p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        footer button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー部分 -->
+    <header>
+        一目ぼれ注文システム
+    </header>
+
+    <!-- ナビゲーションボタン -->
+    <nav>
+        <button onclick="callStaff()">呼び出し</button>
+        <button onclick="searchItems()">検索</button>
+        <button onclick="login()">ログイン / ログアウト</button>
+        <button onclick="viewMyPage()">マイページ</button>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <div class="content">
+        <!-- 左サイドバー：料理ジャンル -->
+        <div class="left-sidebar">
+            <h2>料理ジャンル</h2>
+            <ul class="genre-list">
+                <li onclick="showGenre('sashimi')">刺身</li>
+                <li onclick="showGenre('sushi')">寿司</li>
+                <li onclick="showGenre('yakimono')">焼き物</li>
+                <li onclick="showGenre('nimono')">煮物</li>
+                <li onclick="showGenre('agemono')">揚げ物</li>
+                <li onclick="showGenre('dessert')">デザート</li>
+            </ul>
+        </div>
+
+        <!-- メインコンテンツ：商品情報 -->
+        <div class="main-content" id="main-content">
+            <!-- おすすめ商品セクション -->
+            <div class="product-section">
+                <h2>おすすめ商品</h2>
+                <div class="product-card">
+                    <img src="sashimi.jpg" alt="刺身の盛り合わせ">
+                    <div class="product-info">
+                        <h3>刺身の盛り合わせ</h3>
+                        <p>価格: 1650円 (税抜き)</p>
+                        <p>残り: 10点</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="ramen.jpg" alt="ラーメン">
+                    <div class="product-info">
+                        <h3>ラーメン</h3>
+                        <p>価格: 850円 (税抜き)</p>
+                        <p>残り: 10点</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- フッターナビゲーション -->
+    <footer>
+        <button onclick="viewCart()">カート</button>
+        <button onclick="viewOrders()">注文履歴</button>
+        <button onclick="viewStock()">在庫</button>
+        <button onclick="proceedToPayment()">お会計</button>
+    </footer>
+
+    <script>
+        function callStaff() {
+            alert("店員を呼び出しました。");
+        }
+        function searchItems() {
+            alert("検索機能は準備中です。");
+        }
+        function login() {
+            alert("ログインページに遷移します。");
+        }
+        function viewMyPage() {
+            alert("マイページに遷移します。");
+        }
+        function viewCart() {
+            alert("カートを表示します。");
+        }
+        function viewOrders() {
+            alert("注文履歴を表示します。");
+        }
+        function viewStock() {
+            alert("在庫を表示します。");
+        }
+        function proceedToPayment() {
+            alert("お会計に進みます。");
+        }
+
+        // 料理ジャンルの表示切り替え
+        function showGenre(genre) {
+            const mainContent = document.getElementById('main-content');
+            mainContent.innerHTML = ''; // 既存の内容をクリア
+            const productSection = document.createElement('div');
+            productSection.className = 'product-section';
+            productSection.innerHTML = `<h2>${genre}の商品</h2>`;
+
+            // サンプルの商品データ（仮）
+            const products = {
+                sashimi: [
+                    { name: '刺身の盛り合わせ', price: '1650円', stock: '10点', img: 'sashimi.jpg' }
+                ],
+                sushi: [
+                    { name: '握り寿司セット', price: '2000円', stock: '8点', img: 'sushi.jpg' }
+                ],
+                yakimono: [
+                    { name: '焼き魚', price: '1200円', stock: '5点', img: 'yakimono.jpg' }
+                ],
+                nimono: [
+                    { name: '煮物盛り合わせ', price: '900円', stock: '7点', img: 'nimono.jpg' }
+                ],
+                agemono: [
+                    { name: '天ぷら盛り合わせ', price: '1100円', stock: '6点', img: 'agemono.jpg' }
+                ],
+                dessert: [
+                    { name: '抹茶アイスクリーム', price: '500円', stock: '15点', img: 'dessert.jpg' }
+                ]
+            };
+
+            // 選択されたジャンルの商品を追加
+            products[genre].forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <img src="${product.img}" alt="${product.name}">
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p>価格: ${product.price} (税抜き)</p>
+                        <p>残り: ${product.stock}</p>
+                    </div>
+                `;
+                productSection.appendChild(productCard);
+            });
+
+            mainContent.appendChild(productSection);
+        }
+    </script>
+</body>
+</html>
