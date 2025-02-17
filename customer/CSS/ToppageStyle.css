@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 100px; /* 设置 logo 的宽度 */
+    display: block; /* 让 logo 图片成为块级元素 */
+    margin: 0 auto 10px; /* 自动居中并与 .genre-list 有一定的间距 */
+}
+
+header {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    font-size: 24px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 200px;
+    height: 80px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 确保 logo 和文本居中 */
+    display: flex;
+    flex-direction: column; /* 使用列布局 */
+    align-items: center; /* 居中 logo 和列表 */
+}
+
+.left-sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.genre-list {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* 保证与 sidebar 对齐 */
+    margin-top: 10px; /* 确保与 logo 有间距 */
+    text-align: left; /* 列表文字靠左对齐 */
+}
+
+.genre-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap; /* 允许内容换行 */
+    gap: 20px;
+}
+
+.product-section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.product-card {
+    display: inline-block;
+    width: calc(25% - 20px); /* 调整宽度以适应每行4个元素 */
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px; /* 确保图片高度调整 */
+    object-fit: cover; /* 保持图片比例 */
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 200px;
+    height: 80px;
+}
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 9999;
+    width: 300px;
+}
+
+.popup-message p {
+    font-size: 18px;
+    color: #333;
+}

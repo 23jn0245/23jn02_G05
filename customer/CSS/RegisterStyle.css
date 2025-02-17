@@ -1,0 +1,110 @@
+/* 全体のスタイル設定 */
+body {
+    font-family: Arial, sans-serif; /* フォント設定 */
+    background-color: #f0f0f0; /* 背景色 */
+    display: flex; /* フレックスボックスレイアウト */
+    flex-direction: column; /* 縦方向配置 */
+    align-items: center; /* 中央揃え */
+    padding-top: 50px; /* 上部の余白 */
+}
+
+/* タイトルのスタイル */
+h1 {
+    color: #333; /* 文字色 */
+    padding: 10px; /* 内側余白 */
+    border-radius: 5px; /* 角丸 */
+    width: 100%; /* 幅 */
+    max-width: 600px; /* 最大幅 */
+    text-align: center; /* 中央揃え */
+    margin-bottom: 20px; /* 下余白 */
+}
+
+/* コンテナスタイル */
+.container {
+    background-color: #fafafa; /* 背景色 */
+    padding: 20px; /* 内側余白 */
+    border-radius: 8px; /* 角丸 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影 */
+    width: 600px; /* 幅 */
+    display: flex; /* フレックスボックスレイアウト */
+    flex-direction: column; /* 縦方向配置 */
+    gap: 20px; /* 要素間の間隔 */
+}
+
+/* セクションのスタイル */
+.section {
+    background-color: #ffffff; /* 背景色 */
+    padding: 15px; /* 内側余白 */
+    border-radius: 8px; /* 角丸 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影 */
+    display: flex; /* フレックスボックスレイアウト */
+    flex-direction: column; /* 縦方向配置 */
+    gap: 15px; /* 要素間の間隔 */
+}
+
+/* フォームグループのスタイル */
+.form-group {
+    display: flex; /* フレックスボックスレイアウト */
+    align-items: center; /* 垂直方向中央揃え */
+    gap: 10px; /* 要素間の間隔 */
+}
+
+/* ラベルのスタイル */
+label {
+    font-weight: bold; /* 太字 */
+    width: 120px; /* 幅 */
+    text-align: right; /* 右寄せ */
+    background-color: #d3d3d3; /* 背景色 */
+    padding: 10px; /* 内側余白 */
+    border-radius: 4px; /* 角丸 */
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    padding: 10px; /* 内側余白 */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px; /* 角丸 */
+    flex: 1; /* 自動拡張 */
+    background-color: #ffffff; /* 背景色 */
+}
+
+/* エラーメッセージのスタイル */
+.error-message {
+    color: red; /* 文字色 */
+    font-size: 14px; /* フォントサイズ */
+    display: none; /* デフォルト非表示 */
+    margin-left: 130px; /* 左余白 */
+}
+
+/* 入力エラー時のスタイル */
+input:invalid {
+    border-color: red; /* 赤色の枠線 */
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #d32f2f; /* 背景色（赤系） */
+    color: white; /* 文字色 */
+    border: none; /* 枠線なし */
+    padding: 10px; /* 内側余白 */
+    text-align: center; /* 文字中央揃え */
+    border-radius: 4px; /* 角丸 */
+    cursor: pointer; /* カーソル */
+    width: 33%; /* 幅 */
+    align-self: flex-start; /* 左揃え */
+}
+
+/* 無効状態のボタンのスタイル */
+button:disabled {
+    background-color: #ddd; /* 背景色（グレー系） */
+    cursor: not-allowed; /* カーソル無効 */
+}
+
+/* ボタンコンテナのスタイル */
+.button-container {
+    display: flex; /* フレックスボックスレイアウト */
+    gap: 20px; /* ボタン間の間隔 */
+    justify-content: flex-start; /* 左揃え */
+}

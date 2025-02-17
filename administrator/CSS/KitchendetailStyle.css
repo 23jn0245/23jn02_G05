@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    font-size: 24px;
+    position: relative;
+}
+
+.call-button {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.call-button:hover {
+    background-color: #d32f2f;
+}
+
+.table-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.table-button:hover {
+    background-color: #d32f2f;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.order-table th {
+    background-color: #d3ffd6;
+}
+
+.status-button button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.status-button button:hover {
+    background-color: #d32f2f;
+}
+
+button {
+    background-color: #d32f2f; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}

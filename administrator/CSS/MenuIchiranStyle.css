@@ -1,0 +1,61 @@
+.logo {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    width: 90%;
+}
+
+body {
+    background-color: white;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #d3ffd6;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ボタングループのスタイル */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute; 
+    right: 20px; 
+    top: 0; 
+    transform: translateY(50%); 
+}
